@@ -30,7 +30,7 @@ export default function (specContext: SpecContext): SpecBuilderProps {
     };
     const x: AxisScale = { title: null };
     const axisScales: AxisScales = {
-        x,
+        x: { title: specColumns.x && specColumns.x.name },
         y: { title: specColumns.y && specColumns.y.name },
         z: { title: specColumns.z && specColumns.z.name }
     };
